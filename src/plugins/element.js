@@ -37,7 +37,9 @@ import {
   Step,
   CheckboxGroup,
   Checkbox,
-  Upload
+  Upload,
+  Timeline,
+  TimelineItem
 } from 'element-ui'
 // Message 导入弹窗提示组件
 
@@ -77,6 +79,8 @@ Vue.use(Step)
 Vue.use(CheckboxGroup)
 Vue.use(Checkbox)
 Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 
 // 需要进行全局挂载，所有组件就可以通过vue原型访问到它了，$message是一个自定义属性
 Vue.prototype.$message = Message;
