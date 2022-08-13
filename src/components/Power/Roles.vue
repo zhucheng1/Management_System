@@ -23,8 +23,11 @@
         <!-- 展开列 -->
         <el-table-column type="expand">
           <template v-slot="scope">
+            <!-- 是第一行的话就加上bdtop类名 -->
+            <!-- i1是索引 -->
             <el-row
               :class="['bdbottom', i1 === 0 ? 'bdtop' : '', 'vcenter']"
+              
               v-for="(item1, i1) in scope.row.children"
               :key="item1.id"
             >

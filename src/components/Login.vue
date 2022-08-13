@@ -83,6 +83,7 @@ export default {
         if (!valid) {
           return
         }
+        // 从返回结果中解构出data属性，重命名为res
         const { data: res } = await this.$http.post('login', this.loginForm)
         if (res.meta.status !== 200) {
           return this.$message.error('登陆失败!')
